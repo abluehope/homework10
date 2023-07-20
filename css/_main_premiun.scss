@@ -13,6 +13,7 @@
         margin: 0 0 8rem 0;
         font-size: 14rem;
         text-align: center;
+        color: $color-point;
       }
 
       strong {
@@ -27,6 +28,7 @@
       p {
         padding: 0 40rem;
         text-align: center;
+        line-height: 1.2;
       }
     }
   }
@@ -49,6 +51,16 @@
     height: 120rem;
     width: 1px;
     background: #ddd;
+  }
+
+  @media (max-width: 768px) {
+    .premiun_slide::before {
+      display: none;
+    }
+  
+    .premiun_slide::after {
+      display: none;
+    }
   }
 
   .arrows {

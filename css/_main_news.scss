@@ -27,32 +27,37 @@
       overflow: hidden;
 
       .news_card {
+        margin: 0 $size-gap 0 0;
         padding: 38rem 40rem 38rem 45rem;
-        height: 500rem;
-        border: 1px solid $color-border;
-        background: #f9f9f9;
+        border: 1px solid rgba($color: $color-border, $alpha: 0.5);
+        border-radius: 0 24rem 0 24rem;
+        background: $color-bg;
 
         .img_box {
-          margin: 0 0 40rem 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+          margin: 0 0 32rem 0;
         }
         .txt_box {
-          display: flex;
-          flex-direction: column;
-          width: 300rem;
-
           strong {
             display: block;
             margin: 0 0 8rem 0;
             height: 60rem;
             font-size: 24rem;
-            font-weight: 500;
+            font-weight: 600;
+            color: $color-main;
           }
+
           p {
             margin: 0 0 40rem 0;
+            line-height: 1.2;
             min-height: 48rem;
+          }
+        }
+        @media (max-width: 768px) {
+          margin: 0 0 0 0;
+          .txt_box {
+            strong {
+              margin: 0 0 24rem 0;
+            }
           }
         }
       }

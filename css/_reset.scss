@@ -60,19 +60,19 @@ address {
 }
 
 .sec {
-  padding: 100px 0;
+  padding: 120rem 0;
   .title {
     @include inner();
-    margin: 0 auto 30px auto;
+    margin: 0 auto 32rem auto;
 
     h2 {
-      font-size: 36px;
+      font-size: 36rem;
       font-weight: 700;
-      margin: 0 0 16px 0;
+      margin: 0 0 16rem 0;
     }
 
     .desc {
-      font-size: 16px;
+      font-size: 16rem;
       font-weight: 400;
       color: #666;
     }
@@ -94,6 +94,10 @@ address {
 
 .btn_s {
   @include btn_s();
+}
+
+.btn_more {
+  @include btn_more();
 }
 
 .slick-track,

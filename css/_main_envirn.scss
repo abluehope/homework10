@@ -1,5 +1,4 @@
 .main_envirn {
-  // background: linear-gradient(transparent 50%, $color-bg 50%);
   background: $color-bg;
 
   .inner {
@@ -41,5 +40,9 @@
         }
       }
     }
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
+  
 }

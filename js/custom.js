@@ -33,6 +33,16 @@ $(function () {
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 3,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   });
 
   $(".main_premiun .arrows .left").on("click", function () {
@@ -45,6 +55,15 @@ $(function () {
   $(".news_slide").slick({
     slidesToShow: 2,
     arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   $(".main_news .arrows .left").on("click", function () {

@@ -14,10 +14,11 @@
       strong {
         display: block;
         margin: 0 0 24rem 0;
-        color: #8b634b;
+        color: $color-point;
         font-size: 20rem;
         span {
           color: #a6a6a6;
+          padding: 0 0 0 10rem;
         }
       }
 
@@ -30,6 +31,17 @@
         li {
           margin: 0 0 8rem 0;
         }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 40rem 40rem;
+
+    .footer_wrap {
+      flex-direction: column;
+
+      .left {
+        margin: 0 0 24rem 0;
       }
     }
   }

@@ -24,13 +24,17 @@
 
     p {
       color: #fff;
-      font-size: 64px;
+      font-size: 64rem;
 
       strong {
         font-weight: 700;
       }
       span {
         font-weight: 300;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 32rem;
       }
     }
   }
@@ -45,6 +49,14 @@
       &.on {
         background-size: 100% 100%;
         transition: 4s;
+      }
+
+      @media (max-width: 768px) {
+        background-size: 600%;
+
+        &.on {
+          background-size: 500%;
+        }
       }
     }
 
@@ -95,6 +107,16 @@
       position: absolute;
       right: 0;
     }
+
+    @media (max-width: 768px) {
+      top: 48%;
+      span {
+        font-size: 0rem;
+        i {
+          font-size: 48rem;
+        }
+      }
+    }
   }
 
   .visual_desc {
@@ -105,6 +127,11 @@
     font-size: 12rem;
     color: $color-white;
     z-index: 998;
+
+    @media (max-width: 768px) {
+      width: 180rem;
+      text-align: right;
+    }
   }
 
   .scroll {

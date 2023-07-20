@@ -36,5 +36,8 @@
         margin: 0 0 32rem 0;
       }
     }
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 }

@@ -8,7 +8,6 @@
   background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.35));
 
   &.on {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
     background: $color-main;
 
     .header_wrap {
@@ -29,8 +28,6 @@
     padding: 0 80px;
 
     transition: 0.5s height;
-
-    border-bottom: 1px solid #fff;
 
     h1 {
       width: 280px;
@@ -58,14 +55,23 @@
           transform: translate(-50%, 0);
           text-align: center;
 
-          width: 180rem;
-          background: #000;
+          width: 100%;
+          height: 0;
+          overflow: hidden;
+
+          transition: 0.5;
 
           a {
             font-size: 16rem;
             font-weight: 300;
             line-height: 30rem;
           }
+        }
+      }
+
+      &:hover {
+        .submenu {
+          height: 200rem;
         }
       }
     }
@@ -81,7 +87,7 @@
         color: $color-white;
       }
       .call {
-        font-size: 20px;
+        font-size: 20rem;
         font-weight: 700;
       }
     }
