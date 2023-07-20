@@ -1,0 +1,84 @@
+.main_premiun {
+  position: relative;
+
+  .premiun_itm {
+    .img_box {
+      img {
+        margin: 0 auto 24rem auto;
+      }
+    }
+    .txt_box {
+      span {
+        display: block;
+        margin: 0 0 8rem 0;
+        font-size: 14rem;
+        text-align: center;
+      }
+
+      strong {
+        display: block;
+        margin: 0 0 16rem 0;
+        font-size: 24rem;
+        font-weight: 600;
+        color: $color-main;
+        text-align: center;
+      }
+
+      p {
+        padding: 0 40rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .premiun_slide::before {
+    content: "";
+    position: absolute;
+    top: 21rem;
+    left: 400rem;
+    height: 120rem;
+    width: 1px;
+    background: #ddd;
+  }
+
+  .premiun_slide::after {
+    content: "";
+    position: absolute;
+    top: 21rem;
+    right: 400rem;
+    height: 120rem;
+    width: 1px;
+    background: #ddd;
+  }
+
+  .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1250rem;
+    width: 100%;
+
+    i {
+      font-size: 32rem;
+      cursor: pointer;
+      color: #ddd;
+
+      transition: 0.5s;
+
+      &:hover {
+        color: $color-main;
+      }
+    }
+
+    .left {
+      position: absolute;
+      left: 0;
+    }
+
+    .right {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

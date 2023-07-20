@@ -1,0 +1,40 @@
+.main_location {
+  background: $color-bg;
+  .content {
+    display: flex;
+    gap: $size-gap;
+    > * {
+      flex: 1;
+    }
+
+    .wrap_controllers {
+      display: none;
+    }
+
+    .root_daum_roughmap {
+      width: 100%;
+    }
+
+    .roughmap_maker_label {
+      display: none;
+    }
+
+    .desc_box {
+      padding: 35rem 40rem;
+      background: $color-white;
+
+      strong {
+        display: block;
+        margin: 0 0 16rem 0;
+        font-size: 24rem;
+        font-weight: 600;
+        color: $color-main;
+      }
+
+      span {
+        display: block;
+        margin: 0 0 32rem 0;
+      }
+    }
+  }
+}

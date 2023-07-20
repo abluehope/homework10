@@ -1,0 +1,23 @@
+@mixin inner() {
+  max-width: $size-pc;
+  margin: 0 auto;
+  padding: 0 $size-gap/2;
+}
+
+@mixin btn() {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: $color-main;
+  border-radius: 0 16px 0 16px;
+}
+
+@mixin btn_s() {
+  display: inline-block;
+  padding: 12rem 20rem 11rem 24rem;
+  background: $color-main;
+  color: $color-white;
+
+  i {
+    margin: 0 0 0 8rem;
+  }
+}

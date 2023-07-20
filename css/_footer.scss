@@ -1,0 +1,36 @@
+.footer {
+  padding: 40rem 80rem;
+  background: #202020;
+
+  .footer_wrap {
+    display: flex;
+    .left {
+      width: 240rem;
+    }
+    .right {
+      font-size: 14rem;
+      color: #666666;
+
+      strong {
+        display: block;
+        margin: 0 0 24rem 0;
+        color: #8b634b;
+        font-size: 20rem;
+        span {
+          color: #a6a6a6;
+        }
+      }
+
+      p {
+        margin: 0 0 14rem 0;
+      }
+
+      ul {
+        margin: 0 0 14rem 0;
+        li {
+          margin: 0 0 8rem 0;
+        }
+      }
+    }
+  }
+}
