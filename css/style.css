@@ -618,4 +618,35 @@ address {
   .footer .footer_wrap .left {
     margin: 0 0 24rem 0;
   }
+}
+
+.to_top {
+  position: fixed;
+  bottom: 100rem;
+  right: 100rem;
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.to_top.on {
+  bottom: 5%;
+  visibility: visible;
+  opacity: 1;
+}
+.to_top i {
+  color: #ffffff;
+  background: #003058;
+  padding: 15rem 15rem 12rem 15rem;
+  font-size: 20rem;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .to_top {
+    bottom: 0;
+    right: 0;
+  }
+  .to_top.on {
+    bottom: 1.5%;
+  }
 }/*# sourceMappingURL=style.css.map */

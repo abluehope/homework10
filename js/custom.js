@@ -72,4 +72,8 @@ $(function () {
   $(".main_news .arrows .right").on("click", function () {
     $(".news_slide").slick("slickNext");
   });
+
+  $(".to_top").on("click", function () {
+    $("html, body").animate({ scrollTop: 0 }, 500);
+  });
 });
