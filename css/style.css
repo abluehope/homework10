@@ -528,9 +528,10 @@ address {
 @media (max-width: 768px) {
   .main_news .news_wrap .right .news_card {
     margin: 0 0 0 0;
+    padding: 28rem;
   }
   .main_news .news_wrap .right .news_card .txt_box strong {
-    margin: 0 0 24rem 0;
+    margin: 0 0 32rem 0;
   }
 }
 
