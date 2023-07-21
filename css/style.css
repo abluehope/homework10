@@ -249,6 +249,11 @@ address {
   height: 180rem;
 }
 @media (max-width: 768px) {
+  .header .header_wrap .gnb:hover > ul > li .submenu {
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
   .header .header_wrap .gnb {
     position: fixed;
     top: 0;

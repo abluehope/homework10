@@ -168,6 +168,10 @@
           > li {
             .submenu {
               height: 180rem;
+
+              @media (max-width: 768px) {
+                height: 100%;
+              }
             }
           }
         }
