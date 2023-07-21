@@ -214,6 +214,16 @@ address {
   line-height: 30rem;
   color: #333333;
 }
+@media (max-width: 768px) {
+  .header .header_wrap .gnb li .submenu {
+    position: static;
+    transform: translate(0, 0);
+    width: auto;
+    height: auto;
+    background: #ffffff;
+    text-align: left;
+  }
+}
 .header .header_wrap .gnb::before {
   content: "";
   position: absolute;
@@ -255,21 +265,11 @@ address {
   .header .header_wrap .gnb > ul li a {
     line-height: 60rem;
   }
-  .header .header_wrap .gnb > ul li .submenu {
-    position: static;
-    width: auto;
-  }
-  .header .header_wrap .gnb > ul li .submenu a {
-    color: #ffffff;
-  }
   .header .header_wrap .gnb::before {
     content: none;
   }
   .header .header_wrap .gnb:hover ul li a {
     color: #ffffff;
-  }
-  .header .header_wrap .gnb:hover .submenu {
-    display: none;
   }
   .header .header_wrap .gnb.on {
     left: 0;

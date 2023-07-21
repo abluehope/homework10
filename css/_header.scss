@@ -120,6 +120,16 @@
 
             color: $color-body;
           }
+
+          @media (max-width: 768px) {
+            position: static;
+            transform: translate(0, 0);
+            width: auto;
+            height: auto;
+            background: $color-white;
+
+            text-align: left;
+          }
         }
       }
 
@@ -180,16 +190,6 @@
             a {
               line-height: 60rem;
             }
-
-            .submenu {
-              position: static;
-              // transform: translate(-40%, 0);
-
-              width: auto;
-              a {
-                color: $color-white;
-              }
-            }
           }
         }
         &::before {
@@ -202,9 +202,6 @@
                 color: $color-white;
               }
             }
-          }
-          .submenu {
-            display: none;
           }
         }
 
